@@ -18,7 +18,7 @@ node {
   
   stage('deploy') {
     def resourceGroup = 'AAA_JENKINS' 
-    def webAppName = '<app_name>'
+    def webAppName = 'myJavaApp2'
     // login Azure
     withCredentials([azureServicePrincipal('pietroPrincipalName')]) {
       sh '''
